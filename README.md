@@ -1,3 +1,4 @@
+**THIS IS A CHANGE**
 
 This article explains the script that builds a Mac machine with "everything" needed by a professional developer.
 
@@ -140,7 +141,7 @@ It contains a configuration file named <strong>secrets.sh</strong> which you edi
     </strong></pre>
 
 13. Press command+F to search for "others" (including the double-quotes).
- 
+
     PROTIP: Several categories have a list of brew commands to install additional components.
     (MAC_TOOLS, PYTHON_TOOLS, NODE_TOOLS, etc.) 
 
@@ -180,17 +181,17 @@ Popular in the Maven Repository are:
    * <strong>yarn</strong> for code generation. JHipster uses it as an integrated tool in Java Spring development.
    * <strong>DbUnit</strong> extends the JUnit TestCase class to put databases into a known state between test runs. Written by Manuel Laflamme, DbUnit is added in the Maven pom.xml (or Ant) for download from Maven Central. See http://dbunit.wikidot.com/
    * <strong>mockito</strong> enables calls to be mocked as if they have been creted.
-   Insert file java-mockito-maven.xml as a dependency to maven pom.xml
-   See https://www.youtube.com/watch?v=GKUlQMrbtHE - May 28, 2016
-   and https://zeroturnaround.com/rebellabs/rebel-labs-report-go-away-bugs-keeping-your-code-safe-with-junit-testng-and-mockito/9/
+      Insert file java-mockito-maven.xml as a dependency to maven pom.xml
+      See https://www.youtube.com/watch?v=GKUlQMrbtHE - May 28, 2016
+      and https://zeroturnaround.com/rebellabs/rebel-labs-report-go-away-bugs-keeping-your-code-safe-with-junit-testng-and-mockito/9/
 
    * <strong>TestNG</strong> 
-   See http://testng.org/doc/download.html
-   and https://docs.mendix.com/howto/testing/create-automated-tests-with-testng
-   
+      See http://testng.org/doc/download.html
+      and https://docs.mendix.com/howto/testing/create-automated-tests-with-testng
+
    When using Gradle, insert file java-testng-gradle as a dependency to gradle working within Eclipse plug-in
    Build from source git://github.com/cbeust/testng.git using ./build-with-gradle
-   
+
 TODO: The Python edition of this will insert specs such as this in pom.xml files.   
 
 
@@ -221,7 +222,7 @@ Several other methods (which don't work now) are presented on the internet:
    * <tt>sudo service jenkins start</tt>
 
    * <a target="_blank" href="https://three1415.wordpress.com/2014/12/29/changing-jenkins-port-on-mac-os-x/">
-   This blog, on Dec 29, 2014</a> recommends
+      This blog, on Dec 29, 2014</a> recommends
 
    <pre>sudo defaults write /Library/Preferences/org.jenkins-ci httpPort "$JENKINS_PORT"
    sudo launchctl unload /Library/LaunchDaemons/org.jenkins-ci.plist
@@ -372,13 +373,13 @@ To shut down Jenkins,
 The above is the automated approach to the manual on recommended by many blogs on the internet:
 
    Some say in Finder look for Applications -> Utilities -> Activity Monitor
-   
+
    Others say use command:
 
    <pre>ps -el | grep jenkins</pre>
 
    Two lines would appear. One is the bash command to do the ps command. 
-   
+
    The PID desired is the one that lists the path used to invoke Jenkins, 
    <a href="#JenkinsJava">described above</a>:
 
@@ -508,7 +509,7 @@ Within Eclipse IDE, get a list of plugins at Help -> Install New Software -> Sel
    for the updates manager and for the build process.
 
 ## Scape for Fonts in GitHub
- 
+
 Some developers have not put their stuff from GitHub into Homebrew. So we need to read (scrape) the website and see what is listed, then grab the text and URL to download.
 
 Such is the situation with font files at 
@@ -525,7 +526,7 @@ The files are downloaded into <a target="_blank" href="https://support.apple.com
 ## Other lists of Mac programs 
 
    * https://github.com/paulirish/dotfiles/blob/master/brew-cask.sh
-   (one of the earliest ones by a legend at Google)
+      (one of the earliest ones by a legend at Google)
 
    * https://github.com/andrewconnell/osx-install described at http://www.andrewconnell.com/blog/rapid-complete-install-reinstall-os-x-like-a-champ-in-three-ish-hours separates coreinstall.sh from myinstall.sh for personal preferences.
 
